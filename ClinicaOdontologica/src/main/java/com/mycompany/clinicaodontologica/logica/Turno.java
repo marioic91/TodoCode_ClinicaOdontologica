@@ -1,8 +1,7 @@
 package com.mycompany.clinicaodontologica.logica;
 
 import java.io.Serializable;
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,22 +16,22 @@ public class Turno implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private Enum tipoAtencion;
+    private String tipoAtencion;
     @Temporal(TemporalType.DATE)
-    private LocalDate fecha;
+    private Date fecha;
     @Temporal(TemporalType.TIME)
-    private LocalTime hora;
+    private Date hora;
     @ManyToOne
-    @JoinColumn(name = "idTurno")
+    @JoinColumn(name = "idOdontologo")
     private Odontologo odontologo;
     @ManyToOne
-    @JoinColumn(name = "idTurno2")
+    @JoinColumn(name = "idPaciente")
     private Paciente paciente;
 
     public Turno() {
     }
 
-    public Turno(int id, Enum tipoAtencion, LocalDate fecha, LocalTime hora, Odontologo odontologo, Paciente paciente) {
+    public Turno(int id, String tipoAtencion, Date fecha, Date hora, Odontologo odontologo, Paciente paciente) {
         this.id = id;
         this.tipoAtencion = tipoAtencion;
         this.fecha = fecha;
@@ -49,27 +48,27 @@ public class Turno implements Serializable {
         this.id = id;
     }
 
-    public Enum getTipoAtencion() {
+    public String getTipoAtencion() {
         return tipoAtencion;
     }
 
-    public void setTipoAtencion(Enum tipoAtencion) {
+    public void setTipoAtencion(String tipoAtencion) {
         this.tipoAtencion = tipoAtencion;
     }
 
-    public LocalDate getFecha() {
+    public Date getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
 
-    public LocalTime getHora() {
+    public Date getHora() {
         return hora;
     }
 
-    public void setHora(LocalTime hora) {
+    public void setHora(Date hora) {
         this.hora = hora;
     }
 

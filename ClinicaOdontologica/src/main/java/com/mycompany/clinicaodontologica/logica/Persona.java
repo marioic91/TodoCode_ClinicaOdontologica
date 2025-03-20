@@ -1,7 +1,7 @@
 package com.mycompany.clinicaodontologica.logica;
 
 import java.io.Serializable;
-import java.time.LocalDate;
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,14 +21,14 @@ public abstract class Persona implements Serializable {
     private String nombre;
     private String apellido;
     @Temporal (TemporalType.DATE)
-    private LocalDate fechaNacimiento;
+    private Date fechaNacimiento;
     private String telefono;
     private String direccion;
 
     public Persona() {
     }
 
-    public Persona(int id, String dni, String nombre, String apellido, LocalDate fechaNacimiento, String telefono, String direccion) {
+    public Persona(int id, String dni, String nombre, String apellido, Date fechaNacimiento, String telefono, String direccion) {
         this.id = id;
         this.dni = dni;
         this.nombre = nombre;
@@ -70,11 +70,11 @@ public abstract class Persona implements Serializable {
         this.apellido = apellido;
     }
 
-    public LocalDate getFechaNacimiento() {
+    public Date getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(LocalDate fechaNacimiento) {
+    public void setFechaNacimiento(Date fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 

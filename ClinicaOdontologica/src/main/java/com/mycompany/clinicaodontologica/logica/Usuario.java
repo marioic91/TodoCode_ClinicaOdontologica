@@ -13,12 +13,12 @@ public class Usuario implements Serializable {
     private int id;
     private String nombre;
     private String contrasenia;
-    private Enum rol;
+    private String rol;
 
     public Usuario() {
     }
 
-    public Usuario(int id, String nombre, String contrasenia, Enum rol) {
+    public Usuario(int id, String nombre, String contrasenia, String rol) {
         this.id = id;
         this.nombre = nombre;
         this.contrasenia = contrasenia;
@@ -49,11 +49,11 @@ public class Usuario implements Serializable {
         this.contrasenia = contrasenia;
     }
 
-    public Enum getRol() {
+    public String getRol() {
         return rol;
     }
 
-    public void setRol(Enum rol) {
+    public void setRol(String rol) {
         this.rol = rol;
     }
 

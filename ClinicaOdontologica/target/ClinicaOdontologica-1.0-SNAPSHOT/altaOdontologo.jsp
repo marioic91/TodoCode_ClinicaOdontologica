@@ -3,44 +3,43 @@
 <%@include file="componentesJSP/header.jsp"%>
 <%@include file="componentesJSP/body1.jsp"%>
 
+<h1>ALTA ODONTOLOGO</h1>
+<h2>FORMULARIO</h2>
+
 <form class="user">
-    <div class="form-group row">
-        <div class="col-sm-2 mb-0 mb-sm-1">
+    <div class="form-group col">
+        <div class="col-sm-2 mb-1 mb-sm-2">
             <input type="text" class="form-control form-control-user" id="dni"
                    placeholder="DNI">
         </div>
-        <div class="col-sm-4 mb-0 mb-sm-1">
+        <div class="col-sm-4 mb-1 mb-sm-2">
             <input type="text" class="form-control form-control-user" id="nombre"
                    placeholder="NOMBRE">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 mb-1 mb-sm-2">
             <input type="text" class="form-control form-control-user" id="apellido"
                    placeholder="APELLIDO">
         </div>
-    </div>
-    <div class="form-group">
-        <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-               placeholder="Email Address">
-    </div>
-    <div class="form-group row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-            <input type="password" class="form-control form-control-user"
-                   id="exampleInputPassword" placeholder="Password">
+        <div class="col-sm-2 mb-1 mb-sm-2">
+            <input type="text" class="form-control form-control-user" id="matricula"
+                   placeholder="MATRICULA">
         </div>
-        <div class="col-sm-6">
-            <input type="password" class="form-control form-control-user"
-                   id="exampleRepeatPassword" placeholder="Repeat Password">
+        <div class="col-sm-3 mb-1 mb-sm-2">
+            <input type="text" class="form-control form-control-user" id="especialidad"
+                   placeholder="ESPECIALIDAD">
+        </div>
+        <div class="col-sm-2 mb-1 mb-sm-2">
+            <input type="text" class="form-control form-control-user" id="fechaNacimiento"
+                   placeholder="FECHA DE NACIMIENTO">
+        </div>
+        <div class="col-sm-6 mb-1 mb-sm-2">
+            <input type="text" class="form-control form-control-user" id="fechaNacimiento"
+                   placeholder="DIRECCION">
         </div>
     </div>
-    <a href="login.html" class="btn btn-primary btn-user btn-block">
-        Register Account
-    </a>
-    <hr>
-    <a href="index.html" class="btn btn-google btn-user btn-block">
-        <i class="fab fa-google fa-fw"></i> Register with Google
-    </a>
-    <a href="index.html" class="btn btn-facebook btn-user btn-block">
-        <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+    
+    <a href="" class="btn btn-primary btn-user btn-block">
+        REGISTRAR ODONTOLOGO
     </a>
 </form>
 

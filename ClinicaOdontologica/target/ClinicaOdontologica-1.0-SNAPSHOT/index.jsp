@@ -61,12 +61,12 @@
 
                 <!-- Nav Item - Pages Collapse Menu -->
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
                        aria-expanded="true" aria-controls="collapseTwo">
                         <i class="fas fa-solid fa-user-doctor"></i>
                         <span>ODONTOLOGOS</span>
                     </a>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">ACCIONES</h6>
                             <a class="collapse-item" href="verOdontologo.jsp">VER</a>
@@ -75,14 +75,13 @@
                     </div>
                 </li>
 
-                <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                        aria-expanded="true" aria-controls="collapseUtilities">
                         <i class="fas fa-solid fa-hospital-user"></i>
                         <span>PACIENTES</span>
                     </a>
-                    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingUtilities"
                          data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">ACCIONES</h6>
@@ -91,6 +90,21 @@
                         </div>
                     </div>
                 </li>
+                
+                <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+                   aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-solid fa-user-doctor"></i>
+                    <span>USUARIOS</span>
+                </a>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">ACCIONES</h6>
+                        <a class="collapse-item" href="">VER</a>
+                        <a class="collapse-item" href="altaUsuario.jsp">ALTA</a>
+                    </div>
+                </div>
+            </li>
 
                 <!-- Divider -->
                 <hr class="sidebar-divider">

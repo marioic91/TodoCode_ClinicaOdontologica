@@ -1,6 +1,6 @@
 package com.mycompany.clinicaodontologica.logica;
 
-import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
@@ -21,7 +21,7 @@ public class Odontologo extends Persona{
     public Odontologo() {
     }
 
-    public Odontologo(String matricula, String especialidad, List<Turno> listaTurnos, Usuario usuario, Horario horario, int id, String dni, String nombre, String apellido, LocalDate fechaNacimiento, String telefono, String direccion) {
+    public Odontologo(String matricula, String especialidad, List<Turno> listaTurnos, Usuario usuario, Horario horario, int id, String dni, String nombre, String apellido, Date fechaNacimiento, String telefono, String direccion) {
         super(id, dni, nombre, apellido, fechaNacimiento, telefono, direccion);
         this.matricula = matricula;
         this.especialidad = especialidad;

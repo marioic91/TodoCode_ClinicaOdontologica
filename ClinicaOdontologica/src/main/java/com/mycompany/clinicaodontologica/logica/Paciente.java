@@ -1,6 +1,6 @@
 package com.mycompany.clinicaodontologica.logica;
 
-import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
@@ -11,7 +11,7 @@ public class Paciente extends Persona{
     //private int id;
     private boolean tieneOS;
     private String obraSocial;
-    private Enum tipoSangre;
+    private String tipoSangre;
     @OneToOne
     private Responsable responsable;
     @OneToMany(mappedBy = "paciente")
@@ -20,7 +20,7 @@ public class Paciente extends Persona{
     public Paciente() {
     }
 
-    public Paciente(boolean tieneOS, String obraSocial, Enum tipoSangre, Responsable responsable, List<Turno> listaTurnos, int id, String dni, String nombre, String apellido, LocalDate fechaNacimiento, String telefono, String direccion) {
+    public Paciente(boolean tieneOS, String obraSocial, String tipoSangre, Responsable responsable, List<Turno> listaTurnos, int id, String dni, String nombre, String apellido, Date fechaNacimiento, String telefono, String direccion) {
         super(id, dni, nombre, apellido, fechaNacimiento, telefono, direccion);
         this.tieneOS = tieneOS;
         this.obraSocial = obraSocial;
@@ -45,11 +45,11 @@ public class Paciente extends Persona{
         this.obraSocial = obraSocial;
     }
 
-    public Enum getTipoSangre() {
+    public String getTipoSangre() {
         return tipoSangre;
     }
 
-    public void setTipoSangre(Enum tipoSangre) {
+    public void setTipoSangre(String tipoSangre) {
         this.tipoSangre = tipoSangre;
     }
 

@@ -1,14 +1,13 @@
 package persistencia;
 
+import com.mycompany.clinicaodontologica.logica.Usuario;
+
 public class ControladoraP {
     UsuarioJpaController usuarioJpaController = new UsuarioJpaController();
-    OdontologoJpaController odontologoJpaController = new OdontologoJpaController();
-    PacienteJpaController pacienteJpaController = new PacienteJpaController();
-    SecretarioJpaController secretarioJpaController = new SecretarioJpaController();
-    TurnoJpaController turnoJpaController = new TurnoJpaController();
-    HorarioJpaController horarioJpaController = new HorarioJpaController();
-    ResponsableJpaController responsableJpaController = new ResponsableJpaController();
-    
+
+    public void crearUsuario(Usuario usuario) {
+        usuarioJpaController.create(usuario);
+    }
     
     
 }

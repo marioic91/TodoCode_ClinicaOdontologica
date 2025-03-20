@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence version="2.2" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
-  <!-- Define Persistence Unit -->
-  <persistence-unit name="clinicaOdontologicaPU" transaction-type="JTA">
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="clinicaOdontologicaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>com.mycompany.clinicaodontologica.logica.Horario</class>
     <class>com.mycompany.clinicaodontologica.logica.Odontologo</class>
     <class>com.mycompany.clinicaodontologica.logica.Paciente</class>
@@ -10,9 +10,6 @@
     <class>com.mycompany.clinicaodontologica.logica.Secretario</class>
     <class>com.mycompany.clinicaodontologica.logica.Turno</class>
     <class>com.mycompany.clinicaodontologica.logica.Usuario</class>
-  </persistence-unit>
-  <persistence-unit name="com.mycompany_ClinicaOdontologica_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
-    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/clinicaodontologica?serverTimezone=UTC"/>

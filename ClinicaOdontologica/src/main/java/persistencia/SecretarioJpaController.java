@@ -22,11 +22,11 @@ public class SecretarioJpaController implements Serializable {
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
-
+    
     public SecretarioJpaController() {
         emf = Persistence.createEntityManagerFactory("clinicaOdontologicaPU");
     }
-    
+
     public void create(Secretario secretario) {
         EntityManager em = null;
         try {

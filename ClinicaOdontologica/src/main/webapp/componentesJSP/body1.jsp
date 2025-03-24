@@ -1,4 +1,9 @@
+<%@page import="javax.swing.JOptionPane"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<% HttpSession miSesion = request.getSession();
+String usuario = (String) request.getSession().getAttribute("nombre");
+%>
+
 <body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -33,38 +38,38 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
-                       aria-expanded="true" aria-controls="collapseTwo">
-                        <i class="fas fa-solid fa-user-doctor"></i>
-                        <span>ODONTOLOGOS</span>
-                    </a>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                        <div class="bg-white py-2 collapse-inner rounded">
-                            <h6 class="collapse-header">ACCIONES</h6>
-                            <a class="collapse-item" href="verOdontologo.jsp">VER</a>
-                            <a class="collapse-item" href="altaOdontologo.jsp">ALTA</a>
-                        </div>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                   aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-solid fa-user-doctor"></i>
+                    <span>ODONTOLOGOS</span>
+                </a>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">ACCIONES</h6>
+                        <a class="collapse-item" href="verOdontologo.jsp">VER</a>
+                        <a class="collapse-item" href="altaOdontologo.jsp">ALTA</a>
                     </div>
-                </li>
+                </div>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                       aria-expanded="true" aria-controls="collapseUtilities">
-                        <i class="fas fa-solid fa-hospital-user"></i>
-                        <span>PACIENTES</span>
-                    </a>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingUtilities"
-                         data-parent="#accordionSidebar">
-                        <div class="bg-white py-2 collapse-inner rounded">
-                            <h6 class="collapse-header">ACCIONES</h6>
-                            <a class="collapse-item" href="utilities-color.html">VER</a>
-                            <a class="collapse-item" href="utilities-border.html">ALTA</a>
-                        </div>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                   aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-solid fa-hospital-user"></i>
+                    <span>PACIENTES</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingUtilities"
+                     data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">ACCIONES</h6>
+                        <a class="collapse-item" href="utilities-color.html">VER</a>
+                        <a class="collapse-item" href="utilities-border.html">ALTA</a>
                     </div>
-                </li>
-                
-                <li class="nav-item">
+                </div>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-solid fa-user-doctor"></i>
@@ -105,7 +110,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><%=usuario%></span>
                                 <img class="img-profile rounded-circle"
                                      src="img/undraw_profile.svg">
                             </a>

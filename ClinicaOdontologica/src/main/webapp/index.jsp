@@ -1,5 +1,13 @@
-<!--<!-- 🚀Java WEB TRABAJO INTEGRADOR con JSP + HTML + CSS + JPA - Parte 1 | Curso Java EE ⭐ #10 | 2025 -->
+<!-- 🚀Java WEB TRABAJO INTEGRADOR con JSP + HTML + CSS + JPA - Parte 1 | Curso Java EE ⭐ #10 | 2025 -->
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<!--OBSERVACIONES: IMPLEMENTAR CLASE ENUM PARA ATRIBUTOS ESPECIALIDAD (ODONTOLOGO), TIPO SANGRE (PACIENTE)
+PARENTESCO (RESPONSABLE) Y ROL (USUARIO)-->
+
+<% HttpSession miSesion = request.getSession();
+String usuario = (String) request.getSession().getAttribute("nombre");
+%>
+
 <!DOCTYPE html>
 <html lang="en">
     
@@ -69,7 +77,7 @@
                     <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">ACCIONES</h6>
-                            <a class="collapse-item" href="verOdontologo.jsp">VER</a>
+                            <a class="collapse-item" href="verOdontologos.jsp">VER</a>
                             <a class="collapse-item" href="altaOdontologo.jsp">ALTA</a>
                         </div>
                     </div>
@@ -85,8 +93,8 @@
                          data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">ACCIONES</h6>
-                            <a class="collapse-item" href="utilities-color.html">VER</a>
-                            <a class="collapse-item" href="utilities-border.html">ALTA</a>
+                            <a class="collapse-item" href="">VER</a><%--IMPLEMENTAR!--%>
+                            <a class="collapse-item" href="">ALTA</a><%--IMPLEMENTAR!--%>
                         </div>
                     </div>
                 </li>
@@ -100,7 +108,7 @@
                 <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">ACCIONES</h6>
-                        <a class="collapse-item" href="">VER</a>
+                        <a class="collapse-item" href="SvUsuarios">VER</a>
                         <a class="collapse-item" href="altaUsuario.jsp">ALTA</a>
                     </div>
                 </div>
@@ -132,7 +140,7 @@
                             <li class="nav-item dropdown no-arrow">
                                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"><%=usuario%></span>
                                     <img class="img-profile rounded-circle"
                                          src="img/undraw_profile.svg">
                                 </a>

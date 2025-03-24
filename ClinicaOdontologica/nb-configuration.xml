@@ -18,4 +18,7 @@ Any value defined here will override the pom.xml file value but is only applicab
         <org-netbeans-modules-maven-jaxws.rest_2e_config_2e_type>ide</org-netbeans-modules-maven-jaxws.rest_2e_config_2e_type>
         <org-netbeans-modules-html-editor-lib.default-html-public-id>-//W3C//DTD HTML 3.2 Final//EN</org-netbeans-modules-html-editor-lib.default-html-public-id>
     </properties>
+    <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+        <word>jQuery</word>
+    </spellchecker-wordlist>
 </project-shared-configuration>

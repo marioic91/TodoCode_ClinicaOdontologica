@@ -58,7 +58,7 @@
                                             <hr>
                                         </form>
                                         <div class="text-center">
-                                            <a class="small" href="register.jsp">Crear Cuenta!</a><%--IMPELENTAR!--%>
+                                            <a class="small" href="register.jsp">Crear Cuenta!</a><%--IMPLEMENTAR!--%>
                                         </div>
                                     </div>
                                 </div>

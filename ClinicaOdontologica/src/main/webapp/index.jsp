@@ -93,8 +93,8 @@ String usuario = (String) request.getSession().getAttribute("nombre");
                          data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">ACCIONES</h6>
-                            <a class="collapse-item" href="">VER</a><%--IMPLEMENTAR!--%>
-                            <a class="collapse-item" href="">ALTA</a><%--IMPLEMENTAR!--%>
+                            <a class="collapse-item" href="verPacientes.jsp">VER</a><%--IMPLEMENTAR!--%>
+                            <a class="collapse-item" href="altaPaciente.jsp">ALTA</a><%--IMPLEMENTAR!--%>
                         </div>
                     </div>
                 </li>
@@ -185,7 +185,7 @@ String usuario = (String) request.getSession().getAttribute("nombre");
                 <footer class="sticky-footer bg-white">
                     <div class="container my-auto">
                         <div class="copyright text-center my-auto">
-                            <span>Copyright &copy; Your Website 2021</span>
+                            <span>Copyright &copy; Your Website 2025</span>
                         </div>
                     </div>
                 </footer>

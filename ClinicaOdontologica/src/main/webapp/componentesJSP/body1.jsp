@@ -63,8 +63,8 @@ String usuario = (String) request.getSession().getAttribute("nombre");
                      data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">ACCIONES</h6>
-                        <a class="collapse-item" href="utilities-color.html">VER</a>
-                        <a class="collapse-item" href="utilities-border.html">ALTA</a>
+                        <a class="collapse-item" href="verPacientes.jsp">VER</a>
+                        <a class="collapse-item" href="altaPaciente.jsp">ALTA</a>
                     </div>
                 </div>
             </li>

@@ -1,1 +1,24 @@
-node_modules
+# Carpetas de compilación de NetBeans
+/build/
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+
+# Archivos compilados de Java
+*.class
+*.jar
+*.war
+
+# Carpeta de salida de compilación de NetBeans y Maven
+target/
+out/
+
+# Configuraciones específicas de NetBeans
+nbproject/private/
+
+# Archivos temporales de Tomcat
+*.log
+*.tmp
+logs/
+work/
